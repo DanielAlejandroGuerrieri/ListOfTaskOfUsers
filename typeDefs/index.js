@@ -5,11 +5,17 @@ const taskTypeDefs = require('./task');
 const task = require('../resolvers/task');
 
 const typeDefs = gql `
+    scalar Date
+    
     type Query {
         _: String
     }
 
     type Mutation {
+        _: String
+    }
+
+    type Subscription {
         _: String
     }
 
